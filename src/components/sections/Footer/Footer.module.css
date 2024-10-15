@@ -1,0 +1,25 @@
+.footer {
+	text-align: center;
+	padding: 30px;
+}
+
+.footer img {
+	margin: 0 auto;
+	border-radius: 100%;
+	transition: .5s ease-in-out;
+}
+
+.footer img:hover {
+	scale: 1.1;
+	transform: rotate3d(0, 1, 0, 360deg);
+}
+
+.footer .txt,
+.footer .socials {
+	margin-top: 20px;
+}
+
+.footer .txt p,
+.footer .socials>* {
+	margin: 10px;
+}
