@@ -10,7 +10,7 @@ const Menu = () => {
 			<div className={styles.menu}>
 				<div className={styles.show}>
 					{/* Deverá ser pego pela api */}
-					<Link href="agenda">
+					<Link target='_blank' href="agenda">
 						<p>PRÓXIMO SHOW - 23/06 - GUAÍRA</p>
 					</Link>
 				</div>

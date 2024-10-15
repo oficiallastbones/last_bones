@@ -11,7 +11,7 @@ const Footer = () => {
 			{/* FALTA TERMINAR */}
 			<div className={styles.txt}>
 				<p>@Copyright Last Bones - 2024</p>
-				<p><Link href="https://fgvjr.com/">Powered by FGV Jr.</Link></p>
+				<p><Link target='_blank' href="https://fgvjr.com/">Powered by FGV Jr.</Link></p>
 			</div>
 
 			<div className={styles.socials}>

@@ -1,56 +1,17 @@
-/* Variáveis
-:root {
-    --fundo: rgb(217, 217, 217);
-    --clube-logo-bege: #F0D586;
-    --clube-logo-azul-1: #0091BE;
-    --clube-logo-azul-2: #007B9B;
-    --clube-logo-azul-3: #194D7F;
-    --clube-logo-azul-4: #042B56;
-} */
+@font-face {
+    font-family: 'WorkSans';
+    src: url('/public/fonts/WorkSans-Regular.ttf') format('truetype');
+}
 
-/*Base para o CSS*/
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/public/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-html, body{
-    height:100%;
-    font-family: 'Inter', sans-serif;
-    background-color: rgb(255, 255, 255);
-}
-
-/* Estilo para todos os links */
-a {
-    color: inherit;
-    text-decoration: none; 
-}
-
-
-
-@media screen and (max-width: 920px){
-
-}
-
-@media screen and (max-width: 560px){
-
-}
-
-@media screen and (max-width:320px){
-
-}
-
-/* Responsividade em Tablet e Mobile */
-@media screen and (max-width: 920px) {
-    .main-content {
-        margin-left: 200px; 
-    } 
-}
-
-@media screen and (max-width: 560px) {
-    .main-content {
-        margin-left: 0px; 
-    }
+    font-family: 'WorkSans','Segoe UI', Tahoma, Verdana, sans-serif;
 }
