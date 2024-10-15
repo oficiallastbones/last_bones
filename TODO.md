@@ -27,6 +27,3 @@
 - Fiz um componente para os *social icons*
 
 # Finalizado
-
-
-.
