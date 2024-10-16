@@ -12,7 +12,7 @@
 
 @font-face {
 	font-family: 'Work Sans';
-	src: url('../../public/fonts/WorkSans-Regular.otf') format('otf');
+	src: url('/fonts/WorkSans-Regular.otf') format('otf');
 	font-weight: normal;
 	font-style: normal;
 }
