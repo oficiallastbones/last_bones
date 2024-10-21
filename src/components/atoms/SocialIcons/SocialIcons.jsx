@@ -5,9 +5,9 @@ import styles from "./SocialIcons.module.css"
 const SocialIcons = ({ className = "" }) => {
 	return (
 		<ul className={`${styles.social_icons} ${className}`}>
-			<li><Link target='_blank' href="https://www.instagram.com/officiallastbones/"><FaInstagram /></Link></li>
-			<li><Link target='_blank' href="#"><FaWhatsapp /></Link></li>
-			<li><Link target='_blank' href="https://www.youtube.com/@lastbones9293"><FaYoutube /></Link></li>
+			<li className={styles.instagram}><Link target='_blank' href="https://www.instagram.com/officiallastbones/"><FaInstagram /></Link></li>
+			<li className={styles.zap}><Link target='_blank' href="#"><FaWhatsapp /></Link></li>
+			<li className={styles.youtube}><Link target='_blank' href="https://www.youtube.com/@lastbones9293"><FaYoutube /></Link></li>
 		</ul>
 	)
 }

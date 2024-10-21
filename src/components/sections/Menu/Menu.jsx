@@ -15,7 +15,6 @@ const Menu = () => {
 					</Link>
 				</div>
 
-				<SocialIcons className={styles.socials} />
 
 
 				<div className={styles.secoes}>
@@ -25,6 +24,8 @@ const Menu = () => {
 						<li><Link href="videos">VÍDEOS</Link></li>
 						<li><Link href="contato">CONTATO</Link></li>
 					</ul>
+					<SocialIcons className={styles.socials} />
+
 
 				</div>
 			</div>

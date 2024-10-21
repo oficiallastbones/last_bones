@@ -2,14 +2,27 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 30px;
+	gap: 20px;
 	list-style: none;
 }
 
 .social_icons li {
 	transition: .3s;
+	font-size: 25px;
 }
 
 .social_icons li:hover {
 	scale: 1.1;
+}
+
+.instagram:hover {
+	color: rgb(225, 48, 108);
+}
+
+.zap:hover {
+	color: rgb(37, 211, 102);
+}
+
+.youtube:hover {
+	color: rgb(230, 33, 23);
 }
