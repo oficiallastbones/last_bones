@@ -1,4 +1,4 @@
-import { FaInstagarm, FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa"
+import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa"
 import Link from "next/link"
 import styles from "./SocialIcons.module.css"
 

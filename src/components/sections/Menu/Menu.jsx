@@ -1,6 +1,4 @@
 import styles from "./Menu.module.css"
-import Image from "next/image";
-import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 import SocialIcons from "@/components/atoms/SocialIcons/SocialIcons";
 

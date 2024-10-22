@@ -1,7 +1,7 @@
-import styles from "./SocialIcons.module.css"
+import styles from "./SimpleSection.module.css"
 import Image from "next/image"
 
-const SimpleSection1 = ({ className = "", text, imageUrl}) => {
+const SimpleSection = ({ className = "", text, imageUrl}) => {
 	return (
         <div className={`${styles.simplesection} ${className}`}>
             <div className={styles.text}>
@@ -15,4 +15,4 @@ const SimpleSection1 = ({ className = "", text, imageUrl}) => {
 	)
 }
 
-export default SimpleSection1
+export default SimpleSection
