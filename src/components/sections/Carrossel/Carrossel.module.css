@@ -1,0 +1,49 @@
+.carrossel {
+	margin-top: 80px;
+}
+
+.carrossel .title {
+	text-align: center;
+}
+
+.carrossel .title h1 {
+	font-size: 1.7em;
+}
+
+.carrossel .title h2 {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+.carrossel .title h2 a {
+	font-size: .75em;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: .4s;
+}
+
+.carrossel .title h2 a:hover {
+	font-size: .85em;
+	color: var(--purple);
+}
+
+.cards {
+	margin-top: 40px;
+}
+
+/* .cards>button {
+	display: none !important;
+} */
+
+.cards :global(.slick-dots li button:before) {
+	margin-top: 5px;
+	font-size: 13px;
+	color: var(--purple);
+}
+
+.cards :global(.slick-dots li.slick-active button:before) {
+	color: var(--purple);
+}

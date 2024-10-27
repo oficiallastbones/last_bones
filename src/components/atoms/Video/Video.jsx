@@ -9,8 +9,8 @@ const Video = () => {
 					src="https://www.youtube.com/embed/pN7cGMoyK4w"
 					width={500}
 					height={300}
-					frameborder="0"
-					allowfullscreen
+					frameBorder="0"
+					allowFullScreen
 				/>
 			</div>
 		</div>

@@ -1,0 +1,42 @@
+.join_group .img_desc img {
+	height: 500px;
+}
+
+.join_group .img_desc h2 {
+	margin-top: -140px;
+	margin-bottom: 20px;
+}
+
+.entre_contato {
+	margin-top: 120px;
+}
+
+.entre_contato a,
+.entre_contato h3 {
+	font-size: 1.5em;
+	font-weight: 700;
+	text-align: center;
+}
+
+.entre_contato button {
+	border: none;
+	border-radius: 10px;
+	margin: 30px auto 0;
+	display: block;
+	padding: 10px;
+}
+
+/* .entre_contato button:hover{
+
+} */
+
+.entre_contato button a {
+	padding: 10px;
+	display: inline-block;
+}
+
+@media (max-width: 720px) {
+	.join_group .img_desc h2 {
+		margin-top: -10px;
+	}
+}
