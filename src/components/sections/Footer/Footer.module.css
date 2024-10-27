@@ -11,7 +11,6 @@
 
 .footer img:hover {
 	scale: 1.1;
-	transform: rotate3d(0, 1, 0, 360deg);
 }
 
 .footer .txt,
@@ -22,4 +21,13 @@
 .footer .txt p,
 .footer .socials>* {
 	margin: 10px;
+}
+
+.footer .Jr a {
+	transition: .4s;
+}
+
+.footer .Jr a:hover {
+	color: #1f37a0;
+	font-weight: bold;
 }
