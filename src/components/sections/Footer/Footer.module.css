@@ -10,10 +10,6 @@
 	transition: .5s ease-in-out;
 }
 
-.footer img:hover {
-	scale: 1.1;
-}
-
 .footer .txt,
 .footer .socials {
 	margin-top: 20px;
@@ -25,7 +21,8 @@
 }
 
 .footer .Jr a {
-	transition: .4s;
+	padding: 3px;
+	transition: .3s;
 }
 
 .footer .Jr a:hover {
