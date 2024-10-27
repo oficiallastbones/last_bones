@@ -7,6 +7,23 @@
 	margin-bottom: 20px;
 }
 
+.join_group .popup {
+	color: white;
+	width: 440px;
+	background-color: transparent;
+	border: none;
+	position: relative;
+	top: -170px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: transform 0.4s;
+}
+
+.join_group .popup:hover {
+	transform: translateX(-50%) scale(1.1);
+	/* Cresce uniformemente a partir do centro */
+}
+
 .entre_contato {
 	margin-top: 120px;
 }
@@ -21,14 +38,21 @@
 .entre_contato button {
 	border: none;
 	border-radius: 10px;
-	margin: 30px auto 0;
+	margin: 40px auto 0;
 	display: block;
 	padding: 10px;
+	box-shadow: 5px 5px 15px rgb(153, 153, 153);
+	position: relative;
+	top: 0;
+	left: 0;
+	transition: .4s;
 }
 
-/* .entre_contato button:hover{
-
-} */
+.entre_contato button:hover {
+	box-shadow: 0px 0px 15px white;
+	top: 6px;
+	left: 6px;
+}
 
 .entre_contato button a {
 	padding: 10px;
@@ -38,5 +62,23 @@
 @media (max-width: 720px) {
 	.join_group .img_desc h2 {
 		margin-top: -10px;
+	}
+
+	.join_group .popup {
+		top: -300px;
+		width: 350px;
+	}
+}
+
+@media (max-width: 425px) {
+
+	.join_group .popup {
+		top: -330px;
+		width: 280px;
+	}
+
+	.join_group .popup:hover {
+		transform: translateX(-50%) scale(1.05);
+		/* Cresce uniformemente a partir do centro */
 	}
 }
