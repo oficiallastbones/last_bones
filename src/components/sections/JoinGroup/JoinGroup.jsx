@@ -21,7 +21,7 @@ const JoinGroup = () => {
 				<Carrossel />
 
 				<div className={styles.entre_contato}>
-					<h3>Que tal trazer a Last Bones para seu estabelecimento? </h3>
+					<h3>Que tal trazer a Last Bones para seu evento? </h3>
 					<button><Link href="/contato">Entre em contato!</Link></button>
 				</div>
 			</Container>

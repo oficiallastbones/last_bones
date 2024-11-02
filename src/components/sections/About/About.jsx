@@ -13,7 +13,7 @@ const About = () => {
 				<SimpleSection right imageUrl="/images/banda/2.png" desc="Pessoal filmando show da banda last bones">
 					<p>Com raízes no coração do Rio de Janeiro, Last Bones traz para o palco a essência crua do Grunge e Post-Grunge, revivendo um dos maiores movimentos do rock. A banda é conhecida por seus shows potentes e envolventes, com uma energia que atrai tanto fãs antigos quanto novos. Inspirados por ícones do rock, eles reinventam o som dos anos 90, mantendo viva a paixão pelo gênero e criando uma conexão única com cada plateia.</p>
 				</SimpleSection>
-				<Video></Video>
+				<Video />
 			</Container>
 		</section>
 	)
