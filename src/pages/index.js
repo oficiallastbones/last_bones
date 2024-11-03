@@ -7,7 +7,7 @@ import JoinGroup from "@/components/sections/JoinGroup/JoinGroup";
 export default function Home() {
 	return (
 		<>
-			<Menu />
+			<Menu current_page="home" />
 			<Banner />
 			<About />
 			<JoinGroup />
