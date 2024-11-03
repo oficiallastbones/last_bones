@@ -1,16 +1,19 @@
 .container {
 	margin: 70px auto;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 500px;
 }
 
 .container .videoWrapper {
 	position: relative;
-	/* Proporção 16:9 */
-	padding-top: 56.25%;
+	padding-top: 125%;
+	/* Ajuste a proporção de 16:9 para 4:5 */
+	overflow: hidden;
+	/* Garante que o conteúdo extra não transborde */
 }
 
-iframe.video {
+.videoWrapper iframe,
+.videoWrapper .instagram-media {
 	position: absolute;
 	top: 0;
 	left: 0;

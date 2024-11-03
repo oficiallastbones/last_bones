@@ -52,10 +52,19 @@ const Carrossel = () => {
 			</div>
 
 			<Slider {...settings} className={styles.cards}>
-				<CardCarrossel imgSrc="/images/carrossel/solo.png" />
-				<CardCarrossel imgSrc="/images/carrossel/duo.png" />
-				<CardCarrossel imgSrc="/images/carrossel/duo_rock.png" />
-				<CardCarrossel imgSrc="/images/carrossel/baterista.png" />
+				<CardCarrossel imgSrc="/images/show/show_13.jpg" />
+				<CardCarrossel imgSrc="/images/guitarrista/guitar_7.jpg" />
+				<CardCarrossel imgSrc="/images/show/show_2.jpg" />
+				<CardCarrossel imgSrc="/images/guitarrista/guitar_9.jpg" />
+				<CardCarrossel imgSrc="/images/baterista/bat_5.jpg" />
+				<CardCarrossel imgSrc="/images/guitarrista/guitar_5.jpg" />
+				<CardCarrossel imgSrc="/images/show/show_3.jpg" />
+				<CardCarrossel imgSrc="/images/baterista/bat_3.jpg" />
+				<CardCarrossel imgSrc="/images/guitarrista/guitar_3.jpg" />
+				<CardCarrossel imgSrc="/images/banda/retrato/banda_7.jpg" />
+				<CardCarrossel imgSrc="/images/baterista/bat_7.jpg" />
+				<CardCarrossel imgSrc="/images/show/show_4.jpg" />
+				<CardCarrossel imgSrc="/images/guitarrista/guitar_1.jpg" />
 			</Slider>
 		</section>
 	)

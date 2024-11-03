@@ -3,7 +3,7 @@ import Image from "next/image"
 
 const Banner = () => {
 	return (
-		<Image className={styles.img} src="/images/banda/9.jpg" width="1600" height="1080" alt="Banda Last Bones" />
+		<Image className={styles.img} src="/images/banda/paisagem/banda_8.jpg" width="1600" height="1080" alt="Banda Last Bones" />
 	)
 }
 
