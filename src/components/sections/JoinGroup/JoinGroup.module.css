@@ -1,10 +1,15 @@
 .join_group .img_desc img {
 	height: 500px;
+	object-position: bottom;
 }
 
 .join_group .img_desc h2 {
 	margin-top: -140px;
 	margin-bottom: 20px;
+}
+
+.join_group .container_popup {
+	height: 0;
 }
 
 .join_group .popup {

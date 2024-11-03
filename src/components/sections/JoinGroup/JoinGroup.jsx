@@ -10,7 +10,7 @@ const JoinGroup = () => {
 	return (
 		<section className={styles.join_group} >
 			<Container>
-				<SimpleSection className={styles.img_desc} imageUrl="/images/banda/10.png" desc="Pessoas no show da Last Bones">
+				<SimpleSection className={styles.img_desc} imageUrl="/images/show/show_6.jpg" desc="Pessoas no show da Last Bones">
 					<h2>ENTRE NO NOSSO GRUPO!</h2>
 					<p>Junte-se ao grupo Last Bones no WhatsApp! Lá você acompanha novidades sobre shows, lançamentos e produtos oficiais da banda. Conecte-se com outros fãs e faça parte dessa comunidade apaixonada pelo rock!</p>
 				</SimpleSection>
@@ -18,6 +18,7 @@ const JoinGroup = () => {
 					<Link href={URL_WHATS}>
 						<Chat /></Link>
 				</button>
+
 				<Carrossel />
 
 				<div className={styles.entre_contato}>
