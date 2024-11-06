@@ -1,16 +1,16 @@
 import Menu from "@/components/sections/Menu/Menu"
 import Footer from "@/components/sections/Footer/Footer"
 import Banner from "@/components/sections/Banner/Banner";
-import Desc1 from "@/components/sections/Desc1/Desc1";
-// import Desc2 from "@/components/sections/Desc2/Desc2";
+import About from "@/components/sections/About/About";
+import JoinGroup from "@/components/sections/JoinGroup/JoinGroup";
 
 export default function Home() {
 	return (
 		<>
-			<Menu />
+			<Menu current_page="home" />
 			<Banner />
-			<Desc1 />
-			{/* 	 */}
+			<About />
+			<JoinGroup />
 			<Footer />
 		</>
 	);

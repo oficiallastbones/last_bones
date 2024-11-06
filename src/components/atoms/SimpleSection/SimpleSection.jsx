@@ -1,17 +1,17 @@
 import styles from "./SimpleSection.module.css"
 import Image from "next/image"
 
-const SimpleSection = ({ className = "", text, imageUrl}) => {
+const SimpleSection = ({ className = "", imageUrl, right = false, desc, children }) => {
 	return (
-        <div className={`${styles.simplesection} ${className}`}>
-            <div className={styles.text}>
-                <p>{text}</p>
-            </div>
+		<div className={`${styles[`${right}`]}  ${styles.simpleSection} ${className}`}>
+			<div className={styles.imgContainer}>
+				<Image src={imageUrl} alt={desc} width='500' height='300' />
+			</div>
 
-            <div className={styles.image}>
-                <Image src={imageUrl} alt='desc' width='100' height='100'></Image>
-            </div>
-        </div>
+			<div className={styles.text}>
+				{children}
+			</div>
+		</div>
 	)
 }
 

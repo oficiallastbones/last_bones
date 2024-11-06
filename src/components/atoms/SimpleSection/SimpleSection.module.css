@@ -1,0 +1,76 @@
+.simpleSection {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3%;
+}
+
+.simpleSection img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+	/* transition: .4s; */
+}
+
+.simpleSection .imgContainer {
+	position: relative;
+	width: 50%;
+	max-width: 600px;
+}
+
+.simpleSection .imgContainer::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), var(--background));
+}
+
+.simpleSection .text {
+	line-height: 1.4em;
+	font-size: 1.1em;
+	letter-spacing: .035em;
+	width: 50%;
+	max-width: 500px;
+	text-align: center;
+}
+
+.simpleSection.true {
+	flex-direction: row-reverse;
+}
+
+.simpleSection.true .imgContainer::after {
+	background: linear-gradient(to left, rgba(0, 0, 0, 0), var(--background));
+	left: 0;
+}
+
+@media (max-width: 900px) {
+	.simpleSection {
+		font-size: .9em;
+	}
+}
+
+@media (max-width: 720px) {
+
+	.simpleSection,
+	.simpleSection.true {
+		flex-direction: column;
+		gap: 30px;
+		margin-top: 60px;
+	}
+
+	.simpleSection .imgContainer,
+	.simpleSection .text {
+		/* line-height: 1.45em; */
+		width: 100%;
+	}
+
+	.simpleSection .imgContainer::after {
+		display: none;
+	}
+
+}

@@ -5,7 +5,7 @@ export default function Document() {
 		<Html lang="pt-BR">
 			<Head>
 				<meta charSet="UTF-8"></meta>
-				<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+				<meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
 				<link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
 
 				{/* TODO: colocar as descrições */}

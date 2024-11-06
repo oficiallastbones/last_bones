@@ -5,6 +5,26 @@
 
 :root {
 	--background: black;
+	--purple: #8b4bd3;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	/* height: 10px; */
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(0, 0, 0, 0);
+	/* border-radius: 5px; */
+}
+
+::-webkit-scrollbar-thumb {
+	background: #a4a4a4;
+	border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #dfdfdf;
 }
 
 * {
