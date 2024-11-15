@@ -1,10 +1,11 @@
 import styles from './JoinGroup.module.css'
 import Link from 'next/link'
-import { URL_WHATS } from '@/constants'
 import Container from '@/components/atoms/Container/Container'
 import SimpleSection from '@/components/atoms/SimpleSection/SimpleSection'
 import Chat from '@/components/atoms/ChatPopup/Chat'
-import Carrossel from '../Carrossel/Carrossel'
+import Carrossel from '../Carrossel_home/Carrossel'
+
+import { URL_WHATS } from '@/constants'
 
 const JoinGroup = () => {
 	return (

@@ -1,6 +1,7 @@
 import styles from "./Menu.module.css"
 import Link from "next/link";
 import SocialIcons from "@/components/atoms/SocialIcons/SocialIcons";
+// import Line from "@/components/atoms/Line/Line";
 
 const Menu = ({ current_page }) => {
 	const menu_pages = [
@@ -32,33 +33,32 @@ const Menu = ({ current_page }) => {
 	];
 
 	return (
-		<nav className={styles.nav}>
-			<div className={styles.menu}>
-				<div className={styles.show}>
-					{/* Deverá ser pego pela api */}
-					<Link href="agenda">
-						<p>PRÓXIMO SHOW - 23/06 - GUAÍRA</p>
-					</Link>
+		<>
+			<nav className={`${styles.nav} ${(current_page === 'home') ? styles.home : ''}`}>
+				<div className={styles.menu}>
+					<div className={styles.show}>
+						{/* Deverá ser pego pela api */}
+						<Link href="agenda">
+							<p>PRÓXIMO SHOW - 23/06 - GUAÍRA</p>
+						</Link>
+					</div>
+
+					<div className={styles.secoes}>
+						<ul className={styles.list_secoes}>
+							{menu_pages.map((page) => {
+								if (page.key !== current_page) {
+									return (
+										< li key={page.key} > <Link href={page.link}>{page.name}</Link></li>
+									)
+								}
+							})}
+						</ul>
+						<SocialIcons className={styles.socials} />
+					</div>
 				</div>
-
-
-
-				<div className={styles.secoes}>
-					<ul className={styles.list_secoes}>
-						{menu_pages.map((page) => {
-							if (page.key !== current_page) {
-								return (
-									< li key={page.key} > <Link href={page.link}>{page.name}</Link></li>
-								)
-							}
-						})}
-					</ul>
-					<SocialIcons className={styles.socials} />
-
-
-				</div>
-			</div>
-		</nav >
+			</nav >
+			{/* {(current_page !== 'home') ? <Line /> : ''} */}
+		</>
 	)
 }
 
