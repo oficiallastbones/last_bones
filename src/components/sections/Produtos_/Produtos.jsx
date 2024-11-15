@@ -1,6 +1,5 @@
 import styles from './Produtos.module.css'
 import CardProdutos from '@/components/atoms/Card/CardProdutos'
-import Link from 'next/link'
 import Title from '@/components/atoms/Title/Title'
 
 
