@@ -13,7 +13,7 @@ function Videos() {
           className={`${styles.image} ${styles.largeTall}`}
         />
         <img
-          src="/images/guitarrista/guitar_5.jpg"
+          src="/images/banda/paisagem/banda_1.jpg"
           alt="Imagem 2"
           className={`${styles.image} ${styles.square}`}
         />
@@ -23,7 +23,7 @@ function Videos() {
           className={`${styles.image} ${styles.square}`}
         />
         <img
-          src="/images/baterista/bat_7.jpg"
+          src="/images/banda/paisagem/banda_8.jpg"
           alt="Imagem 4"
           className={`${styles.image} ${styles.wide}`}
         />
