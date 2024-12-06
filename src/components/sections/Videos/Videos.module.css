@@ -104,3 +104,79 @@
   height: 450px;
   border: none;
 }
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5";
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .largeTall {
+    height: 300px;
+  }
+
+  .square {
+    height: 200px;
+  }
+
+  .wide,
+  .superWide {
+    height: 200px;
+    grid-column: span 1;
+  }
+
+  .video {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5";
+    gap: 8px;
+  }
+
+  .largeTall {
+    height: 250px;
+  }
+
+  .square {
+    height: 150px;
+  }
+
+  .wide,
+  .superWide {
+    height: 150px;
+    grid-column: span 1;
+  }
+
+  .divider {
+    margin: 30px auto;
+  }
+
+  .youtubeTitle {
+    font-size: 1.2rem;
+  }
+
+  .video {
+    height: 200px;
+  }
+}
