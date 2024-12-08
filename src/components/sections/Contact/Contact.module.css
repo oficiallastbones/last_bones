@@ -1,87 +1,110 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif; /*COLOCAR A FONTE PADRÃO QUE */
-
-}
-
-body {
+.contato {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: black; /*COLOCAR A COR DO BG PADRÃO*/
+    background: black;
 }
 
-section {
+.section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px 45px;
-    background: blue; /*COLOCAR A COR DO DESIGN*/
-    width: 500px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px rgba(0, 0, 0, 0.3) 0px 7px 13px -3px 0px inset;
+    padding: 20px 30px;
+    background: blue;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 8px;
 }
 
-section h2 {
-    color: aqua; /*COLOCAR A COR DO DESIGN*/
+.contatonome {
+    color: aqua;
     font-size: 2.5rem;
     margin: 2rem;
+    text-align: center;
 }
 
-section form {
+.formulario {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-form label {
-    color: aqua; /*COLOCAR A COR DO DESIGN*/
-    font-size: 17px;
-    margin-bottom: 4px;
+.formularionome,
+.formulariotelefone,
+.formularioemail,
+.formulariomensagem {
+    color: aqua;
+    font-size: 1rem;
+    margin-bottom: 8px;
 }
 
-form input {
+.inputnome,
+.inputtelefone,
+.inputemail,
+.inputmensagem {
     padding: 15px;
     outline: none;
-    border: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     margin-bottom: 20px;
-    font-size: 15px;
-    transition: all 0.5s;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
 }
 
-form input:focus {
-    border-radius: 16px;
+.inputnome:focus,
+.inputtelefone:focus,
+.inputemail:focus,
+.inputmensagem:focus {
+    border-color: aqua;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
 }
 
-form textarea {
-    padding: 10px;
-    outline: none;
-    border: 0;
-    font-size: 15px;
-    margin-bottom: 30px;
-    transition: all 0.5s;
-}
-
-form textarea:focus {
-    border-radius: 16px;
-}
-
-form button {
+.formulariobotao {
     padding: 15px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     background: transparent;
-    border: 2px solid aqua; /*COLOCAR A COR DO DESIGN*/
-    color: blue; /*COLOCAR A COR DO DESIGN*/
-    transition: all 1s;
-    margin-bottom: 20px;
+    border: 2px solid aqua;
+    color: blue;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
 }
 
-form button:hover {
-    background: tan; /*COLOCAR A COR DO DESIGN*/
-    color: palegreen; /*COLOCAR A COR DO DESIGN*/
+.formulariobotao:hover {
+    background: tan;
+    color: palegreen;
     border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 15px 20px;
+        width: 90%;
+    }
+
+    .contatonome {
+        font-size: 2rem;
+        margin: 1.5rem;
+    }
+
+    .formularionome,
+    .formulariotelefone,
+    .formularioemail,
+    .formulariomensagem {
+        font-size: 0.9rem;
+    }
+
+    .inputnome,
+    .inputtelefone,
+    .inputemail,
+    .inputmensagem {
+        font-size: 0.9rem;
+    }
+
+    .formulariobotao {
+        font-size: 0.9rem;
+    }
 }
