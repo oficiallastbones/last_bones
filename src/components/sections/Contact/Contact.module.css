@@ -19,9 +19,18 @@
 
 .contatonome {
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin: 2rem;
     text-align: center;
+}
+
+.lastbones {
+    margin-top: 50px;
+    margin-bottom: -10px;
+}
+
+.lastbones{
+    font-size: 2rem;
 }
 
 .formulario {
@@ -41,13 +50,14 @@
     transition: border-color 0.3s;
 }
 
-.formularionome label,
+.formularionome,
 .formulariotelefone,
 .formularioemail,
 .formulariomensagem {
     color: white;
     font-size: 1rem;
     margin-bottom: 8px;
+    width: 100%;
 }
 
 .inputnome,
@@ -134,5 +144,9 @@
 
     .formulariobotao {
         font-size: 0.9rem;
+    }
+
+    .formulario {
+        width: 500px;
     }
 }

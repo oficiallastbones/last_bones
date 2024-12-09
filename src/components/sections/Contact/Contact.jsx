@@ -47,7 +47,7 @@ const Contact = () => {
     return (
         <section className={styles.contato}>
             <div>
-                <h2>LEVE A LAST BONES ATÉ VOCÊ</h2>
+                <h2 className={styles.lastbones}>LEVE A LAST BONES ATÉ VOCÊ</h2>
             </div>
 
             <div>
@@ -67,6 +67,7 @@ const Contact = () => {
                         title="Digite seu nome"
                         pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$"
                         autoCapitalize="on"
+                        autocomplete='off'
                         required
                         className={styles.inputnome}
                         value={formData.nome}
@@ -84,6 +85,7 @@ const Contact = () => {
                         pattern="\(\d{2}\) \d{4,5}-\d{4}"
                         title="Digite seu telefone"
                         required
+                        autocomplete='off'
                         className={styles.inputtelefone}
                         value={formData.telefone}
                         onChange={handleChange}
@@ -99,6 +101,7 @@ const Contact = () => {
                         placeholder="example@example.com"
                         title="Digite seu email"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        autocomplete='off'
                         required
                         className={styles.inputemail}
                         value={formData.email}
@@ -116,6 +119,7 @@ const Contact = () => {
                         placeholder="Digite sua mensagem"
                         title="Digite sua mensagem"
                         required
+                        autocomplete='off'
                         className={styles.inputmensagem}
                         value={formData.message}
                         onChange={handleChange}
