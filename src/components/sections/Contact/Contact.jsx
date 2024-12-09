@@ -47,68 +47,81 @@ const Contact = () => {
 
     return (
         <section className={styles.contato}>
-            <h2 className={styles.contatonome}>Entre em contato</h2>
-            <form onSubmit={handleSubmit} className={styles.formulario}>
-                <label htmlFor="nome" className={styles.formularionome}>
-                    Nome
-                </label>
-                <input
-                    id="nome"
-                    type="text"
-                    name="nome"
-                    placeholder="Digite seu nome"
-                    autoComplete="on"
-                    autoCorrect="on"
-                    autoCapitalize="on"
-                    required
-                    className={styles.inputnome}
-                    value={formData.nome}
-                    onChange={handleChange}
-                />
-                <label htmlFor="telefone" className={styles.formulariotelefone}>
-                    Telefone
-                </label>
-                <input
-                    id="telefone"
-                    type="tel"
-                    name="telefone"
-                    placeholder="(00) 00000-0000"
-                    pattern="\(\d{2}\) \d{4,5}-\d{4}"
-                    title="Formato esperado: (99) 99999-9999"
-                    autoComplete="on"
-                    required
-                    className={styles.inputtelefone}
-                    value={formData.telefone}
-                    onChange={handleChange}
-                />
-                <label htmlFor="email" className={styles.formularioemail}>
-                    Email
-                </label>
-                <input
-                    id="email"
-                    type="email"
-                    name="email"
-                    placeholder="Digite seu email"
-                    autoComplete="on"
-                    required
-                    className={styles.inputemail}
-                    value={formData.email}
-                    onChange={handleChange}
-                />
-                <label htmlFor="message" className={styles.formulariomensagem}>
-                    Mensagem
-                </label>
-                <textarea
-                    id="message"
-                    name="message"
-                    cols="30"
-                    rows="10"
-                    placeholder="Digite sua mensagem"
-                    required
-                    className={styles.inputmensagem}
-                    value={formData.message}
-                    onChange={handleChange}
-                ></textarea>
+            <div>
+                <h2>LEVE A LAST BONES ATÉ VOCÊ</h2>
+                <h2 className={styles.contatonome}>Entre em contato: </h2>
+            </div>
+
+            <div>
+                <form onSubmit={handleSubmit} className={styles.formulario}>
+                    <label htmlFor="nome" className={styles.formularionome}>
+                        Nome
+                    </label>
+                    <input
+                        id="nome"
+                        type="text"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        title="Digite seu nome"
+                        pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$"
+                        autoComplete="on"
+                        autoCorrect="on"
+                        autoCapitalize="on"
+                        required
+                        className={styles.inputnome}
+                        value={formData.nome}
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="telefone" className={styles.formulariotelefone}>
+                        Telefone
+                    </label>
+                    <input
+                        id="telefone"
+                        type="tel"
+                        name="telefone"
+                        placeholder="(00) 00000-0000"
+                        pattern="\(\d{2}\) \d{4,5}-\d{4}"
+                        title="Digite seu telefone"
+                        autoComplete="on"
+                        required
+                        className={styles.inputtelefone}
+                        value={formData.telefone}
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="email" className={styles.formularioemail}>
+                        Email
+                    </label>
+                    <input
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="example@example.com"
+                        title="Digite seu email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        autoComplete="on"
+                        required
+                        className={styles.inputemail}
+                        value={formData.email}
+                        onChange={handleChange}
+                    />
+                    <label htmlFor="message" className={styles.formulariomensagem}>
+                        Escreva sua mensagem
+                    </label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        cols="30"
+                        rows="10"
+                        placeholder="Digite sua mensagem"
+                        required
+                        className={styles.inputmensagem}
+                        value={formData.message}
+                        onChange={handleChange}
+                    ></textarea>
+                </form>
+            </div>
+            
+            <div>
                 <button
                     type="submit"
                     className={styles.formulariobotao}
@@ -116,7 +129,8 @@ const Contact = () => {
                 >
                     {isSubmitting ? "Enviando..." : "Enviar mensagem"}
                 </button>
-            </form>
+            </div>
+
         </section>
     );
 };
