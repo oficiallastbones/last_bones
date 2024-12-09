@@ -33,8 +33,7 @@ const Contact = () => {
             });
 
             if (response.ok) {
-                // Substitua "URL_DE_REDIRECIONAMENTO" pela URL desejada
-                window.location.href = "URL_DE_REDIRECIONAMENTO";
+                window.location.href = "URL_DE_REDIRECIONAMENTO"; // Substitua pela URL desejada
             } else {
                 console.error("Erro ao enviar o formulário");
             }
@@ -49,7 +48,10 @@ const Contact = () => {
         <section className={styles.contato}>
             <div>
                 <h2>LEVE A LAST BONES ATÉ VOCÊ</h2>
-                <h2 className={styles.contatonome}>Entre em contato: </h2>
+            </div>
+
+            <div>
+                <h2 className={styles.contatonome}>Entre em contato:</h2>
             </div>
 
             <div>
@@ -64,14 +66,13 @@ const Contact = () => {
                         placeholder="Digite seu nome"
                         title="Digite seu nome"
                         pattern="^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$"
-                        autoComplete="on"
-                        autoCorrect="on"
                         autoCapitalize="on"
                         required
                         className={styles.inputnome}
                         value={formData.nome}
                         onChange={handleChange}
                     />
+
                     <label htmlFor="telefone" className={styles.formulariotelefone}>
                         Telefone
                     </label>
@@ -82,12 +83,12 @@ const Contact = () => {
                         placeholder="(00) 00000-0000"
                         pattern="\(\d{2}\) \d{4,5}-\d{4}"
                         title="Digite seu telefone"
-                        autoComplete="on"
                         required
                         className={styles.inputtelefone}
                         value={formData.telefone}
                         onChange={handleChange}
                     />
+
                     <label htmlFor="email" className={styles.formularioemail}>
                         Email
                     </label>
@@ -98,12 +99,12 @@ const Contact = () => {
                         placeholder="example@example.com"
                         title="Digite seu email"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                        autoComplete="on"
                         required
                         className={styles.inputemail}
                         value={formData.email}
                         onChange={handleChange}
                     />
+
                     <label htmlFor="message" className={styles.formulariomensagem}>
                         Escreva sua mensagem
                     </label>
@@ -113,22 +114,23 @@ const Contact = () => {
                         cols="30"
                         rows="10"
                         placeholder="Digite sua mensagem"
+                        title="Digite sua mensagem"
                         required
                         className={styles.inputmensagem}
                         value={formData.message}
                         onChange={handleChange}
                     ></textarea>
+
+                    <div>
+                        <button
+                            type="submit"
+                            className={styles.formulariobotao}
+                            disabled={isSubmitting}
+                        >
+                            {isSubmitting ? "Enviando..." : "Enviar mensagem"}
+                        </button>
+                    </div>
                 </form>
-            </div>
-            
-            <div>
-                <button
-                    type="submit"
-                    className={styles.formulariobotao}
-                    disabled={isSubmitting}
-                >
-                    {isSubmitting ? "Enviando..." : "Enviar mensagem"}
-                </button>
             </div>
 
         </section>
