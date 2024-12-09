@@ -6,7 +6,7 @@ import Contact from "@/components/sections/Contact/Contact"
 const Contato = () => {
 	return (
 		<>
-			<Menu />
+			<Menu current_page="contato" />
 			<Contact />
 			<Footer />
 		</>
