@@ -1,0 +1,58 @@
+.card {
+	margin: 0 auto;
+	padding: 10px;
+	max-width: 1000px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #0F0F13;
+	border-radius: 20px;
+	gap: 10px;
+	transition: .4s;
+}
+
+.card:hover {
+	scale: 1.02;
+}
+
+.card .date {
+	text-align: center;
+	margin-left: 20px;
+}
+
+.card .date .dia {
+	font-size: 3.5em;
+}
+
+.card .date .mes {
+	font-weight: 400;
+	font-size: 1.4em;
+}
+
+.card .date .ano {
+	font-weight: 400;
+	font-size: 2.1em;
+}
+
+.card .desc h1 {
+	font-weight: 500;
+}
+
+.card .desc span {
+	display: block;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.card .location_map {
+	width: 300px;
+	height: 180px;
+}
+
+.card .location_map .map {
+	width: 300px;
+	height: 180px;
+	border-radius: 20px;
+	z-index: 0;
+}

@@ -13,13 +13,13 @@
 
 # Observações
 ## Gerais
-- [ ] Mudar a foto principal para a logo da banda, vai valorizar mais
+- [X] Mudar a foto principal para a logo da banda, vai valorizar mais
 - [X] Mudar a fonte: mais fina e elegante (work-sans ou satoshi)
 - [-] Site modelo (https://alterbridge.com/)
 - [O] Tirar a logo ou a foto com a bandeira
 - [X] Tirar a logo do lado direito (trabalhar com a logo da esquerda) -> centralizar
-- [ ] Atualizar os preços
-- [ ] Fazer um dashboard para a parte da agenda
+- [-] Atualizar os preços
+- [-] Fazer um dashboard para a parte da agenda
 - [ ] Atualizar as imagens da parte de Vídeos e Imagens
 - [ ] Adicionar uma seção da escola de música deles (fazer aquela barrinha parecida com propagandas percorrendo pelo site)
 

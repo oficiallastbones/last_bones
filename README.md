@@ -46,8 +46,6 @@ Abaixo está uma visão geral das principais pastas e arquivos do projeto:
 3. Instale as dependências:
    ```bash
    npm install
-	# ou
-	yarn install
    ```
 4. Execute o servidor de desenvolvimento::
    ```bash
