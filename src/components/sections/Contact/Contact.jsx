@@ -1,5 +1,9 @@
 import { useState } from "react";
 import styles from "./Contact.module.css";
+import Title from "@/components/atoms/Title/Title";
+import Chat from '@/components/atoms/ChatPopup/Chat';
+import { URL_WHATS_GRUPO } from "@/constants";
+import Link from "next/link";
 
 const Contact = () => {
 	const [formData, setFormData] = useState({
@@ -46,6 +50,7 @@ const Contact = () => {
 
 	return (
 		<section className={styles.contato}>
+			<Title tag='contato'></Title>
 			<div>
 				<h2 className={styles.lastbones}>LEVE A LAST BONES ATÉ VOCÊ</h2>
 			</div>
@@ -132,6 +137,44 @@ const Contact = () => {
 						</button>
 					</div>
 				</form>
+			</div>
+
+			<div className={styles.gallery}>
+				<img
+				src="/images/show/show_5.jpg"
+				alt="Imagem 1"
+				className={`${styles.image} ${styles.largeTall}`}
+				/>
+				<img
+				src="/images/banda/paisagem/banda_1.jpg"
+				alt="Imagem 2"
+				className={`${styles.image} ${styles.square}`}
+				/>
+				<img
+				src="/images/guitarrista/guitar_1.jpg"
+				alt="Imagem 3"
+				className={`${styles.image} ${styles.square}`}
+				/>
+				<img
+				src="/images/banda/paisagem/banda_8.jpg"
+				alt="Imagem 4"
+				className={`${styles.image} ${styles.wide}`}
+				/>
+			</div>
+
+			<hr className={styles.divider} />
+			
+			<div className={styles.clube}>
+				<h2>SEJA PARTE DO CLUBE</h2>
+				<p>Entre no nosso grupo do Whatsapp e seja avisado sobre os próximos shows da banda, participe de sorteios e tenha acesso a todo conteúdo extra da banda direto pelo seu celular</p>
+
+			</div>
+
+			<div className={styles.botao}>
+					<button className={styles.popup} >
+						<Link href={URL_WHATS_GRUPO}>
+							<Chat /></Link>
+					</button>
 			</div>
 
 		</section>
