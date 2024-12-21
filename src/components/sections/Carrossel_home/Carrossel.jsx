@@ -16,8 +16,6 @@ const Carrossel = () => {
 		slidesToScroll: 1, // Quantidade de slides que se movem por vez
 		autoplay: true, // Ativa a rotação automática
 		autoplaySpeed: 3000, // Velocidade de rotação automático
-		// centerMode: true,
-		// centerPadding: '0',
 		responsive: [
 			{
 				breakpoint: 1180,

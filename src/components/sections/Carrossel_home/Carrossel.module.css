@@ -1,7 +1,3 @@
-.carrossel {
-	/* margin-top: 80px; */
-}
-
 .carrossel .title {
 	text-align: center;
 }
@@ -33,10 +29,6 @@
 .cards {
 	margin-top: 60px;
 }
-
-/* .cards>button {
-	display: none !important;
-} */
 
 .cards :global(.slick-dots li button:before) {
 	margin-top: 5px;

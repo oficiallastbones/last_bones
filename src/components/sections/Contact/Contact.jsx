@@ -173,7 +173,8 @@ const Contact = () => {
 			<div className={styles.botao}>
 					<button className={styles.popup} >
 						<Link href={URL_WHATS_GRUPO}>
-							<Chat /></Link>
+							<Chat />
+						</Link>
 					</button>
 			</div>
 
