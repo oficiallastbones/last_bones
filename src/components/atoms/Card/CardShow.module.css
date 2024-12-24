@@ -63,7 +63,8 @@
 		width: fit-content;
 	}
 
-	.date, .desc{
+	.date,
+	.desc {
 		font-size: 12px;
 	}
 
@@ -78,7 +79,8 @@
 		width: fit-content;
 	}
 
-	.date, .desc{
+	.date,
+	.desc {
 		font-size: 10px;
 	}
 
@@ -94,11 +96,15 @@
 		width: fit-content;
 	}
 
-	.date, .desc, .location_map{
+	.date,
+	.desc,
+	.location_map {
 		margin-bottom: 20px;
+		text-align: center;
 	}
 
-	.desc, .date {
+	.desc,
+	.date {
 		font-size: 15px;
 	}
 }
