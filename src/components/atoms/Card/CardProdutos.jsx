@@ -6,7 +6,7 @@ import { URL_WHATS_VENDAS } from '@/constants'
 
 const CardProdutos = ({ id, name, price, desc, imgSrc }) => {
 	return (
-		<Link href={`https://wa.me/5521975566900?text=${desc}`}>
+		<Link href={`${URL_WHATS_VENDAS}?text=${desc}`}>
 			<div className={styles.card}>
 				<Image src={imgSrc} width="300" height="400" alt={name} />
 				<div className={styles.desc}>
