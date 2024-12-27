@@ -1,10 +1,13 @@
 // src/components/sections/Videos/Videos.jsx
 import React from "react";
 import styles from "./Videos.module.css";
+import Title from "@/components/atoms/Title/Title";
 
 function Videos() {
   return (
+    
     <div className={styles.container}>
+      <Title tag='conteúdo'></Title>
       <h1 className={styles.title}>VIDEOS E CONTEÚDOS</h1>
       <div className={styles.gallery}>
         <img

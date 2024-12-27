@@ -4,8 +4,8 @@ import Container from '@/components/atoms/Container/Container'
 import SimpleSection from '@/components/atoms/SimpleSection/SimpleSection'
 import Chat from '@/components/atoms/ChatPopup/Chat'
 import Carrossel from '../Carrossel_home/Carrossel'
-
-import { URL_WHATS } from '@/constants'
+import { FaWhatsapp } from "react-icons/fa"
+import { URL_WHATS } from "@/constants"
 
 const JoinGroup = () => {
 	return (
@@ -24,7 +24,7 @@ const JoinGroup = () => {
 
 				<div className={styles.entre_contato}>
 					<h3>Que tal trazer a Last Bones para seu evento? </h3>
-					<button><Link href="/contato">Entre em contato!</Link></button>
+					<button><Link target="_blanck" href={URL_WHATS}><span>Entre em contato!</span> <FaWhatsapp /></Link></button>
 				</div>
 			</Container>
 		</section >

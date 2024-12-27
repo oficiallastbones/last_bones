@@ -1,6 +1,6 @@
 import CardCarrossel from '@/components/atoms/Card/CardCarrossel'
 import { URL_INSTA } from '@/constants'
-import Slider from "react-slick"
+import Slider from 'react-slick'
 import Link from 'next/link'
 import styles from './Carrossel.module.css'
 import "slick-carousel/slick/slick.css";
@@ -16,6 +16,8 @@ const Carrossel = () => {
 		slidesToScroll: 1, // Quantidade de slides que se movem por vez
 		autoplay: true, // Ativa a rotação automática
 		autoplaySpeed: 3000, // Velocidade de rotação automático
+		// centerMode: true,
+		// centerPadding: '0',
 		responsive: [
 			{
 				breakpoint: 1180,

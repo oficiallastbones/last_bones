@@ -152,8 +152,7 @@
       "img1"
       "img2"
       "img3"
-      "img4"
-      "img5";
+      "img4";
     grid-template-columns: 1fr;
     gap: 8px;
   }

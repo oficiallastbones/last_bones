@@ -1,16 +1,20 @@
 import styles from './CardProdutos.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { URL_WHATS_VENDAS } from '@/constants'
 
-const CardProdutos = ({ id, name, price, imgSrc }) => {
+
+const CardProdutos = ({ id, name, price, desc, imgSrc }) => {
 	return (
-		<div className={styles.card}>
-			<Image src={imgSrc} width="300" height="400" alt={name} />
-			<div className={styles.desc}>
-				<h2>{name}</h2>
-				<h3>{price}</h3>
+		<Link href={`${URL_WHATS_VENDAS}?text=${desc}`}>
+			<div className={styles.card}>
+				<Image src={imgSrc} width="300" height="400" alt={name} />
+				<div className={styles.desc}>
+					<h2>{name}</h2>
+					<h3>{price}</h3>
+				</div>
 			</div>
-		</div>
+		</Link>
 	)
 }
 

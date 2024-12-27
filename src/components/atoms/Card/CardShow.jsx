@@ -14,6 +14,13 @@ const CardShow = ({ date, title_desc, opening, rua, property, location }) => {
 			mapRef.current.remove();
 		}
 
+		const customIcon = L.icon({
+			iconUrl: '/images/logo_black.png',
+			iconSize: [20, 20],
+			iconAnchor: [20, 40],
+			popupAnchor: [0, -40], 
+		});
+
 		// Inicializa o mapa e o armazena na referência
 		mapRef.current = L.map(mapContainerRef.current, {
 			center: location || [-23.55052, -46.633308], // Coordenadas padrão ou passadas via props
@@ -26,9 +33,9 @@ const CardShow = ({ date, title_desc, opening, rua, property, location }) => {
 		}).addTo(mapRef.current);
 
 		// Adiciona um marcador na localização especificada
-		L.marker(location || [-23.55052, -46.633308])
+		L.marker(location || [-23.55052, -46.633308], {icon: customIcon})
 			.addTo(mapRef.current)
-			.bindPopup('Localização do evento')
+			.bindPopup('LastBones estará aqui')
 			.openPopup();
 
 	}, [location]); // Recria o mapa apenas se `location` mudar
@@ -45,7 +52,7 @@ const CardShow = ({ date, title_desc, opening, rua, property, location }) => {
 		<div className={styles.card}>
 			<div className={styles.date}>
 				<h1 className={styles.dia}>{dia}</h1>
-				<h3 className={styles.mes}>de {mes}</h3>
+				<h3 className={styles.mes}> {mes}</h3>
 				<h2 className={styles.ano}>{ano}</h2>
 			</div>
 			<div className={styles.desc}>

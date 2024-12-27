@@ -6,11 +6,11 @@
 
 .footer img {
 	margin: 0 auto;
-	padding: 5px;
+	/* padding: 5px; */
 	border-radius: 100%;
 	transition: .5s ease-in-out;
 	object-fit: contain;
-	border: 2px solid white;
+	/* border: 2px solid white; */
 }
 
 .footer .txt,
@@ -29,6 +29,6 @@
 }
 
 .footer .Jr a:hover {
-	color: #1f37a0;
+	color: #5776ff;
 	font-weight: bold;
 }
