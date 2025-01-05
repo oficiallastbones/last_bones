@@ -3,4 +3,5 @@
 	height: 75vh;
 	/* max-height: 800px; */
 	object-fit: cover;
+	object-position: 50% 73%;
 }
