@@ -1,6 +1,7 @@
 import Menu from "@/components/sections/Menu/Menu"
 import Agenda_ from "@/components/sections/Agenda/Agenda"
 import Footer from "@/components/sections/Footer/Footer"
+import JoinGroup from "@/components/sections/JoinGroup/JoinGroup"
 
 export async function getStaticProps() {
 	try {

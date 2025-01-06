@@ -7,7 +7,7 @@ function Videos() {
     
     <div className={styles.container}>
       <Title tag='conteúdo'></Title>
-      <h1 className={styles.title}>VIDEOS E CONTEÚDOS</h1>
+      <h1 className={styles.title}>VÍDEOS E CONTEÚDOS</h1>
       <div className={styles.gallery}>
         <img
           src="/images/show/show_5.jpg"

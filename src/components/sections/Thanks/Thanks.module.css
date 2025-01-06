@@ -23,8 +23,7 @@
 .botao {
 	width: fit-content;
     margin-top: 50px;
-    border-radius: 20px;
-    background-color: rgb(43, 39, 39);
+    background-color: rgba(224, 36, 36, 0.5);
     padding: 0.5%;
     padding-left: 1.5%;
     padding-right: 1.5%;
