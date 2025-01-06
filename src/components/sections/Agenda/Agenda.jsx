@@ -2,13 +2,27 @@ import styles from './Agenda.module.css'
 import Title from '@/components/atoms/Title/Title'
 import CardShow from '@/components/atoms/Card/CardShow'
 
-const Agenda = () => {
+const Agenda = ({ agenda }) => {
 	return (
 		<section className={styles.agenda}>
 			<Title tag="agenda de shows">Agenda de shows</Title>
 
-			<CardShow date={new Date} title_desc="Last Bones (Tributo Grunge)" opening="19h" rua="Rua das Hortaliças 43" property="Salão de Eventos UGRF" location={[-22.908333, -43.196388]} />
-			<CardShow date={new Date} title_desc="Last Bones (Tributo Grunge)" opening="19h" rua="Rua das Hortaliças 43" property="Salão de Eventos UGRF" location={[-22.908333, -43.196388]} />
+			{agenda.length > 0
+				? (
+					agenda.map((show) => (
+						<CardShow
+							key={show.id}
+							date={new Date(show.date)}
+							title_desc={show.name}
+							opening={`${new Date(show.date).getHours().toString().padStart(2, '0')}:${new Date(show.date).getMinutes().toString().padStart(2, '0')}`}
+							rua={show.description}
+							property="Salão de Eventos UGRF"
+							location={show.maps}
+						/>
+					))
+				) : (
+					<p>Nenhum show encontrado.</p>
+				)}
 		</section>
 	)
 }

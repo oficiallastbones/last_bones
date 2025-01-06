@@ -13,7 +13,7 @@ const Produtos = ({ produtos }) => {
 						<CardProdutos id={produto.id} key={produto.id} name={produto.name} price={produto.price} desc={produto.description} imgSrc={produto.img} />
 					))
 				) : (
-					<p>Nenhum produto encontrado com este status.</p>
+					<p>Nenhum produto disponível encontrado.</p>
 				)}
 			</div>
 		</section>

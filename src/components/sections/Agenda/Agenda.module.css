@@ -1,3 +1,8 @@
 .agenda {
 	padding: 0 5%;
 }
+
+.agenda>p {
+	text-align: center;
+	margin: 30px;
+}
