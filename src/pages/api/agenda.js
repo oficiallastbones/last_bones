@@ -53,13 +53,11 @@ export default async function getDatabase(req, res) {
 			}
 		}).filter((produto) => produto.status === "Disponível")
 
-
 		// Ordenar os dados pelo campo `date`
 		const sortedDatabase = database_.sort((a, b) => new Date(a.date) - new Date(b.date));
 
 		// Envie a resposta com os dados ordenados
 		res.status(200).json(sortedDatabase);
-
 
 	} catch (error) {
 		console.error("Error fetching database:", error)
