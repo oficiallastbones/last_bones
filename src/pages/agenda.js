@@ -5,7 +5,6 @@ import Footer from "@/components/sections/Footer/Footer"
 
 export async function getServerSideProps() {
 	try {
-
 		const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
 		const response = await fetch(`${baseUrl}/api/agenda`)
 		const database_ = await response.json()

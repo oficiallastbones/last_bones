@@ -46,12 +46,13 @@ export default async function getDatabase(req, res) {
 			return {
 				id: item.properties["ID"].unique_id.number,
 				status: item.properties["Status"].status.name,
+				availability: item.properties["Disponibilidade"].formula.string,
 				name: item.properties["Nome"]?.title[0]?.text.content || "Sem nome",
 				date: item.properties["Data"].date?.start || undefined,
 				description: item.properties["Descrição"].rich_text[0]?.text.content || "Sem descrição",
 				maps: mapsData,
 			}
-		}).filter((produto) => produto.status === "Disponível")
+		}).filter((produto) => produto.status === "Disponível" && produto.availability === "Disponível")
 
 		// Ordenar os dados pelo campo `date`
 		const sortedDatabase = database_.sort((a, b) => new Date(a.date) - new Date(b.date));

@@ -1,6 +1,7 @@
 import styles from "./Menu.module.css"
 import Link from "next/link";
 import SocialIcons from "@/components/atoms/SocialIcons/SocialIcons";
+import { useEffect, useState } from 'react'
 
 const Menu = ({ current_page }) => {
 	const menu_pages = [
@@ -31,6 +32,42 @@ const Menu = ({ current_page }) => {
 		},
 	];
 
+	const [proximoShow, setProximoShow] = useState(undefined);
+
+	useEffect(() => {
+		const fetchProximoShow = async () => {
+			try {
+				const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
+				const response = await fetch(`${baseUrl}/api/agenda`)
+				const database_ = await response.json()
+
+				console.log(database_[0])
+
+				setProximoShow(database_[0] || undefined)
+			} catch (error) {
+				console.error('Erro ao buscar o próximo show:', error);
+			};
+		};
+
+		fetchProximoShow();
+	}, []);
+
+
+	const formatarDataHora = (dataString) => {
+		const data = new Date(dataString);
+		const dataFormatada = data.toLocaleDateString('pt-BR', {
+			day: '2-digit',
+			month: '2-digit',
+		});
+		const horaFormatada = data.toLocaleTimeString('pt-BR', {
+			hour: '2-digit',
+			minute: '2-digit',
+			hour12: false,
+		});
+
+		return `${dataFormatada} às ${horaFormatada}`;
+	};
+
 	return (
 		<>
 			<nav className={`${styles.nav} ${(current_page === 'home') ? styles.home : ''}`}>
@@ -38,7 +75,9 @@ const Menu = ({ current_page }) => {
 					<div className={styles.show}>
 						{/* Deverá ser pego pela api */}
 						<Link href="agenda">
-							<p>PRÓXIMO SHOW - 23/06 - GUAÍRA</p>
+							{proximoShow
+								? `Próximo show: ${proximoShow.name} - ${formatarDataHora(proximoShow.date)}`
+								: 'Nenhum show agendado'}
 						</Link>
 					</div>
 
