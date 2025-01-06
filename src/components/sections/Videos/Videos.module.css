@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  max-width: 100%; /* Garante que o container ocupe no máximo 100% da tela */
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -9,6 +9,8 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  position: relative;
+  overflow-x: hidden; /* Evita rolagem horizontal */
 }
 
 .title {
@@ -16,17 +18,24 @@
   margin-bottom: 20px;
 }
 
+/* Galeria de imagens */
 .gallery {
   display: grid;
   grid-template-areas:
     "img1 img2 img3"
     "img1 img4 img4"
     "img5 img5 img5";
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Colunas dinâmicas para evitar largura fixa */
   grid-template-rows: auto;
   gap: 15px;
   justify-content: center;
   align-items: center;
+  max-width: 100%; /* Garante que a galeria nunca ultrapasse os limites da tela */
+  overflow: hidden; /* Previne overflow interno */
+  padding: 0 15px;
 }
 
 .image {
@@ -63,6 +72,7 @@
   grid-column: span 3;
 }
 
+/* Seção de vídeos */
 .youtubeSection {
   margin-top: 60px;
   width: 100%;
@@ -103,7 +113,36 @@
   border: none;
 }
 
-/* Responsividade */
+/* Responsividade para galeria e vídeos */
+@media (max-width: 980px) {
+  .gallery {
+    grid-template-areas:
+      "img1 img1"
+      "img2 img3"
+      "img4 img4"
+      "img5 img5";
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .largeTall {
+    height: 300px;
+  }
+
+  .square {
+    height: 250px;
+  }
+
+  .wide,
+  .superWide {
+    height: 250px;
+    grid-column: span 2;
+  }
+
+  .video {
+    height: 350px;
+  }
+}
 
 @media (max-width: 768px) {
   .gallery {
@@ -113,11 +152,11 @@
       "img3"
       "img4";
     grid-template-columns: 1fr;
-    gap: 10px;
+    gap: 8px;
   }
 
   .largeTall {
-    height: 300px;
+    height: 250px;
   }
 
   .square {
@@ -136,10 +175,6 @@
 }
 
 @media (max-width: 480px) {
-  .title {
-    font-size: 1.5rem;
-  }
-
   .gallery {
     grid-template-columns: 1fr;
     grid-template-areas:

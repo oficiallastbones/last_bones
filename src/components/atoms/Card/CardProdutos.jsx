@@ -4,17 +4,20 @@ import Link from 'next/link'
 import { URL_WHATS_VENDAS } from '@/constants'
 
 
-const CardProdutos = ({ id, name, price, imgSrc }) => {
+const CardProdutos = ({ id, name, price, desc, imgSrc }) => {
+	const formattedPrice = isNaN(price) ? price : "R$ " + parseFloat(price).toFixed(2).replace('.', ',')
+	const mensagem = `Olá! Gostaria de saber mais sobre o produto *${name}* com descrição: *${desc}*. O valor é *R$ ${formattedPrice}*. Poderia me ajudar com a compra?`
+
 	return (
-		<div className={styles.card}>
-			<Link href={URL_WHATS_VENDAS} target='_blank'>
-				<Image src={imgSrc} width="300" height="400" alt={name} href={URL_WHATS_VENDAS} />
-			</Link>
-			<div className={styles.desc}>
-				<h2>{name}</h2>
-				<h3>{price}</h3>
+		<Link href={`${URL_WHATS_VENDAS}?text=${mensagem}`} rel="noopener noreferrer">
+			<div className={styles.card}>
+				<Image src={imgSrc.url} width="300" height="400" alt={imgSrc.name} />
+				<div className={styles.desc}>
+					<h2>{name}</h2>
+					<h3>{formattedPrice}</h3>
+				</div>
 			</div>
-		</div>
+		</Link>
 	)
 }
 

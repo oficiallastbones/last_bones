@@ -8,6 +8,8 @@
 	margin-bottom: 20px;
 }
 
+
+
 .join_group .container_popup {
 	height: 0;
 }
@@ -41,6 +43,7 @@
 }
 
 .entre_contato button {
+	cursor: pointer;
 	border: none;
 	border-radius: 10px;
 	margin: 40px auto 0;
@@ -50,6 +53,13 @@
 	top: 0;
 	left: 0;
 	transition: .4s;
+}
+
+.entre_contato button svg {
+	font-size: 1.2em;
+	position: relative;
+	top: 4px;
+	left: 0;
 }
 
 .entre_contato button:hover {
