@@ -14,7 +14,6 @@ export async function getServerSideProps() {
 			props: {
 				products: database_,
 			},
-			revalidate: 60, // Atualiza a página a cada 60 segundos
 		}
 	} catch (error) {
 		console.error("Error fetching products:", error)
