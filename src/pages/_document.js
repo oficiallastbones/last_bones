@@ -8,7 +8,6 @@ export default function Document() {
 				<meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
 				<link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" />
 
-				{/* TODO: colocar as descrições */}
 				{/* SEO (Search Engine Optimization) */}
 				<meta name="description" content="adicionaer" />
 				<meta name="keywords" content="Adicionar" />

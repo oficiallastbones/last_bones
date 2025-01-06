@@ -2,10 +2,16 @@ import { useState } from "react";
 import styles from "./Contact.module.css";
 import Title from "@/components/atoms/Title/Title";
 import Chat from '@/components/atoms/ChatPopup/Chat';
-import { URL_WHATS_GRUPO } from "@/constants";
+import { URL_WHATS_GRUPO, ACCESS_KEY } from "@/constants";
 import Link from "next/link";
+import { useRouter } from "next/router";
+
 
 const Contact = () => {
+
+	const router = useRouter();
+
+
 	const [formData, setFormData] = useState({
 		nome: "",
 		telefone: "",
@@ -25,19 +31,19 @@ const Contact = () => {
 		setIsSubmitting(true);
 
 		try {
-			const response = await fetch("URL_DA_API", {
+			const response = await fetch("https://api.staticforms.xyz/submit", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
 				},
 				body: JSON.stringify({
 					...formData,
-					accessKey: "CHAVE_DE_ACESSO",
+					accessKey: ACCESS_KEY,
 				}),
 			});
 
 			if (response.ok) {
-				window.location.href = "URL_DE_REDIRECIONAMENTO"; // Substitua pela URL desejada
+				router.push("/obrigado");
 			} else {
 				console.error("Erro ao enviar o formulário");
 			}
@@ -86,8 +92,7 @@ const Contact = () => {
 						type="tel"
 						name="telefone"
 						placeholder="(00) 00000-0000"
-						// pattern="\(\d{2}\) \d{4,5}-\d{4}"
-						pattern="\d{11}"
+						pattern="\(\d{2}\) \d{4,5}-\d{4}"
 						title="Digite seu telefone"
 						required
 						className={styles.inputtelefone}

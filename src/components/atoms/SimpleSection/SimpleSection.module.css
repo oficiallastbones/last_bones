@@ -10,7 +10,6 @@
 	width: 100%;
 	object-fit: cover;
 	border-radius: 20px;
-	/* transition: .4s; */
 }
 
 .simpleSection .imgContainer {
@@ -65,7 +64,6 @@
 
 	.simpleSection .imgContainer,
 	.simpleSection .text {
-		/* line-height: 1.45em; */
 		width: 100%;
 	}
 

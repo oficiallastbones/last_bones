@@ -1,7 +1,6 @@
 import styles from "./Menu.module.css"
 import Link from "next/link";
 import SocialIcons from "@/components/atoms/SocialIcons/SocialIcons";
-// import Line from "@/components/atoms/Line/Line";
 
 const Menu = ({ current_page }) => {
 	const menu_pages = [
@@ -57,7 +56,6 @@ const Menu = ({ current_page }) => {
 					</div>
 				</div>
 			</nav >
-			{/* {(current_page !== 'home') ? <Line /> : ''} */}
 		</>
 	)
 }

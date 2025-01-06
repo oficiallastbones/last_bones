@@ -1,4 +1,3 @@
-// src/components/sections/Videos/Videos.jsx
 import React from "react";
 import styles from "./Videos.module.css";
 import Title from "@/components/atoms/Title/Title";

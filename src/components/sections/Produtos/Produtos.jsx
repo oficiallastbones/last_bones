@@ -1,8 +1,6 @@
 import styles from './Produtos.module.css'
 import CardProdutos from '@/components/atoms/Card/CardProdutos'
 import Title from '@/components/atoms/Title/Title'
-import { URL_WHATS_VENDAS } from '@/constants'
-
 
 const Produtos = () => {
 	return (
