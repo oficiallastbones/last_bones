@@ -12,6 +12,8 @@ export default async function getDatabase(req, res) {
 			database_id: DATABASE_ID
 		})
 
+		console.log(database.results)
+
 		const database_ = database.results.map((item) => {
 			const mapsLink = item.properties["Link GoogleMaps"].rich_text?.[0]?.text.content || null
 

@@ -1,7 +1,7 @@
 import Menu from "@/components/sections/Menu/Menu"
 import Agenda_ from "@/components/sections/Agenda/Agenda"
-import Footer from "@/components/sections/Footer/Footer"
 import JoinGroup from "@/components/sections/JoinGroup/JoinGroup"
+import Footer from "@/components/sections/Footer/Footer"
 
 export async function getStaticProps() {
 	try {
@@ -9,6 +9,7 @@ export async function getStaticProps() {
 		const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
 		const response = await fetch(`${baseUrl}/api/agenda`)
 		const database_ = await response.json()
+		console.log("AGENDA: ", database_)
 
 		return {
 			props: {
@@ -27,6 +28,8 @@ export async function getStaticProps() {
 }
 
 const Agenda = ({ agenda }) => {
+	console.log("AGENDA: ", agenda)
+
 	return (
 		<>
 			<Menu current_page="agenda" />
