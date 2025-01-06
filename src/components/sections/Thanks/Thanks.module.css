@@ -1,0 +1,30 @@
+.obrigado {
+    text-align: center;
+    padding: 10%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.descricao {
+    margin-top: 100px;
+}
+
+.texto1{
+    font-size: 30px;
+}
+
+.texto2 {
+    font-size: 20px;
+}
+
+
+.botao {
+	width: fit-content;
+    margin-top: 50px;
+    background-color: rgba(224, 36, 36, 0.5);
+    padding: 0.5%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}

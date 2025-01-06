@@ -1,5 +1,5 @@
 import Menu from "@/components/sections/Menu/Menu"
-import Produtos_ from "@/components/sections/Produtos_/Produtos"
+import Produtos_ from "@/components/sections/Produtos/Produtos"
 import JoinGroup from "@/components/sections/JoinGroup/JoinGroup"
 import Footer from "@/components/sections/Footer/Footer"
 

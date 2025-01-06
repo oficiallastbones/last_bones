@@ -1,8 +1,6 @@
-/* src/components/sections/Videos/Videos.module.css */
-
 .container {
   max-width: 100%; /* Garante que o container ocupe no máximo 100% da tela */
-  margin: 0 auto;
+  margin: 0 5%;
   padding: 20px;
   text-align: center;
   color: white;

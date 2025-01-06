@@ -49,7 +49,6 @@
 	margin: 40px auto 0;
 	display: block;
 	padding: 10px;
-	/* box-shadow: 3px 3px 0 rgb(153, 153, 153); */
 	position: relative;
 	top: 0;
 	left: 0;
@@ -64,7 +63,6 @@
 }
 
 .entre_contato button:hover {
-	/* box-shadow: 1px 1px 0 white; */
 	top: 3px;
 	left: 3px;
 }
