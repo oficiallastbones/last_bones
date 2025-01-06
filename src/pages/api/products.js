@@ -27,7 +27,7 @@ export default async function getDatabase(req, res) {
 					name: "Imagem não adicionada",
 					url: "/images/banner_2.jpg"
 				}
-		})).filter((produto) => produto.status === "Disponivel")
+		})).filter((produto) => produto.status === "Disponível")
 
 		// Envie a resposta com os dados
 		res.status(200).json(database_);

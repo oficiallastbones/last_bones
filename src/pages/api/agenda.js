@@ -12,8 +12,6 @@ export default async function getDatabase(req, res) {
 			database_id: DATABASE_ID
 		})
 
-		console.log(database.results)
-
 		const database_ = database.results.map((item) => {
 			const mapsLink = item.properties["Link GoogleMaps"].rich_text?.[0]?.text.content || null
 
@@ -43,16 +41,17 @@ export default async function getDatabase(req, res) {
 			}
 
 			// Usar a função para extrair os dados da URL
-			const mapsData = mapsLink ? extractDataFromMapsUrl(mapsLink) : null;
+			const mapsData = mapsLink ? extractDataFromMapsUrl(mapsLink) : { place: undefined, lat: undefined, long: undefined, id: undefined };
 
 			return {
 				id: item.properties["ID"].unique_id.number,
+				status: item.properties["Status"].status.name,
 				name: item.properties["Nome"]?.title[0]?.text.content || "Sem nome",
 				date: item.properties["Data"].date?.start || undefined,
 				description: item.properties["Descrição"].rich_text[0]?.text.content || "Sem descrição",
 				maps: mapsData,
 			}
-		})
+		}).filter((produto) => produto.status === "Disponível")
 
 
 		// Ordenar os dados pelo campo `date`
