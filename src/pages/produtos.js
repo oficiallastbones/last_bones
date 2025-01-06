@@ -7,7 +7,8 @@ export async function getStaticProps() {
 	try {
 
 		const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
-		const response = await fetch(`${baseUrl}/api/todos/products`)
+		const response = await fetch(`${baseUrl}/api/products`)
+		console.log(`PRODUTOS: ${baseUrl}/api/products`)
 		const database_ = await response.json()
 
 		return {
