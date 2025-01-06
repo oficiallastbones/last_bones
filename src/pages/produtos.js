@@ -3,7 +3,7 @@ import Produtos_ from "@/components/sections/Produtos/Produtos"
 import JoinGroup from "@/components/sections/JoinGroup/JoinGroup"
 import Footer from "@/components/sections/Footer/Footer"
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 	try {
 
 		const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
