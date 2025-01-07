@@ -48,6 +48,7 @@ export default async function getDatabase(req, res) {
 				status: item.properties["Status"].status.name,
 				availability: item.properties["Disponibilidade"].formula.string,
 				name: item.properties["Nome"]?.title[0]?.text.content || "Sem nome",
+				location: item.properties["Local"]?.rich_text[0]?.text.content || "Sem descrição",
 				date: item.properties["Data"].date?.start || undefined,
 				description: item.properties["Descrição"].rich_text[0]?.text.content || "Sem descrição",
 				maps: mapsData,

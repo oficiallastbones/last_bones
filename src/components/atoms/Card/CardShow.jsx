@@ -1,7 +1,7 @@
 import styles from './CardShow.module.css';
 import 'leaflet/dist/leaflet.css';
 
-const CardShow = ({ date, title_desc, opening, rua, property, location }) => {
+const CardShow = ({ date, title, opening, description, property, location }) => {
 
 	const diasDaSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
 	const meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
@@ -20,12 +20,12 @@ const CardShow = ({ date, title_desc, opening, rua, property, location }) => {
 				<h2 className={styles.ano}>{ano}</h2>
 			</div>
 			<div className={styles.desc}>
-				<h1>{title_desc}</h1>
+				<h1>{title}</h1>
 				<span></span>
 				<p>{diaSemana}, {dia} de {mes}</p>
 				<p>Início do Show: {opening}</p>
 				<span></span>
-				<p>{rua}</p>
+				<p>{description}</p>
 				<p>{property}</p>
 			</div>
 			<div className={styles.location_map}>

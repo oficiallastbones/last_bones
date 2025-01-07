@@ -13,10 +13,10 @@ const Agenda = ({ agenda }) => {
 						<CardShow
 							key={show.id}
 							date={new Date(show.date)}
-							title_desc={show.name}
+							title={show.name}
 							opening={`${new Date(show.date).getHours().toString().padStart(2, '0')}:${new Date(show.date).getMinutes().toString().padStart(2, '0')}`}
-							rua={show.description}
-							property="Salão de Eventos UGRF"
+							description={show.description}
+							property={show.location}
 							location={show.maps}
 						/>
 					))
