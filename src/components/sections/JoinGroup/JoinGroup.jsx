@@ -17,7 +17,8 @@ const JoinGroup = () => {
 				</SimpleSection>
 				<button className={styles.popup} >
 					<Link href={URL_WHATS}>
-						<Chat /></Link>
+						<Chat />
+					</Link>
 				</button>
 
 				<Carrossel />

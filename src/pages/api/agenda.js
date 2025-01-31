@@ -48,9 +48,9 @@ export default async function getDatabase(req, res) {
 				status: item.properties["Status"].status.name,
 				availability: item.properties["Disponibilidade"].formula.string,
 				name: item.properties["Nome"]?.title[0]?.text.content || "Sem nome",
-				location: item.properties["Local"]?.rich_text[0]?.text.content || "Sem descrição",
+				location: item.properties["Local"]?.rich_text[0]?.text.content || "",
 				date: item.properties["Data"].date?.start || undefined,
-				description: item.properties["Descrição"].rich_text[0]?.text.content || "Sem descrição",
+				description: item.properties["Descrição"].rich_text[0]?.text.content || "",
 				maps: mapsData,
 			}
 		}).filter((produto) => produto.status === "Disponível" && produto.availability === "Disponível")

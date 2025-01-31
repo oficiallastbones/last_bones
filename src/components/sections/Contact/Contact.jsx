@@ -58,7 +58,7 @@ const Contact = () => {
 		<section className={styles.contato}>
 			<Title tag='contato'></Title>
 			<div>
-				<h2 className={styles.lastbones}>LEVE A LAST BONES ATÉ VOCÊ</h2>
+				<h2 className={styles.lastbones}>LEVE O LAST BONES ATÉ VOCÊ</h2>
 			</div>
 
 			<div>

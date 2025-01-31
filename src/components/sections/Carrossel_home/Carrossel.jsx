@@ -44,7 +44,7 @@ const Carrossel = () => {
 				<h1>LAST GRAN</h1>
 				<h2>
 					<Link href={URL_INSTA} target='_blank'>
-						@LASTBONES
+						@officiallastbones
 					</Link>
 				</h2>
 			</div>

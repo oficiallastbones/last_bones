@@ -7,7 +7,7 @@ const Footer = () => {
 	return (
 		<footer className={styles.footer}>
 			<Link href="\">
-				<Image styles={styles.logo} src="/images/logo_white.png" width="120" height="120" alt="logo lastbones last bones"></Image>
+				<Image styles={styles.logo} src="/images/logos/logo_white.png" width="120" height="120" alt="logo lastbones last bones"></Image>
 			</Link>
 
 			<div className={styles.txt}>

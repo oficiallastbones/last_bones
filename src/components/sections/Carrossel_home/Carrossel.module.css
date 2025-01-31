@@ -19,6 +19,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 	transition: .4s;
+	margin-top: 10px;
 }
 
 .carrossel .title h2 a:hover {

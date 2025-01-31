@@ -6,7 +6,7 @@ const Chat = ({ className = "" }) => {
 	return (
 		<div className={`${styles.popup} ${className}`}>
 			<div className={styles.right}>
-				<Image src="/images/logo_white.png" width="60" height="60" alt="desc" />
+				<Image src="/images/logos/logo_white.png" width="60" height="60" alt="desc" />
 				<div className={styles.text}>
 					<h2>Last Bones</h2>
 					<p>
