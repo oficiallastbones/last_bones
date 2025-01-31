@@ -53,7 +53,7 @@ export default async function getDatabase(req, res) {
 				description: item.properties["Descrição"].rich_text[0]?.text.content || "",
 				maps: mapsData,
 			}
-		}).filter((produto) => produto.status === "Disponível" && produto.availability === "Disponível")
+		}).filter((show) => show.status === "Disponível" && show.availability === "Disponível")
 
 		// Ordenar os dados pelo campo `date`
 		const sortedDatabase = database_.sort((a, b) => new Date(a.date) - new Date(b.date));
